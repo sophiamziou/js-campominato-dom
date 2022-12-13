@@ -58,7 +58,7 @@ function createGrid(row_cell){
                         grid.childNodes[i].classList.add('red');
                     }
                 }
-                alert('hai perso')
+                alert(`Hai perso. Il tuo punteggio è ${activeCells.length}`)
             }
             
             else if(activeCells.length == row_cell * row_cell - valuesBombs.length){
@@ -67,7 +67,7 @@ function createGrid(row_cell){
                         grid.childNodes[i].classList.add('red');
                     }
                 }
-                alert('hai vinto')
+                alert(`Hai vinto!`)
             }
 
             else{
@@ -92,3 +92,6 @@ function generateBombs(row_cell){
     }
 }
 
+function refreshPage(){
+    window.location.reload();
+}
